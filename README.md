@@ -121,3 +121,36 @@ SOC Analyst & Cybersecurity Engineer
 ## 📄 License
 
 MIT License — free to use and modify.
+-------------------------------------------------------------------------
+## 🚀 Git Quick Commands
+
+### First Time Setup
+```bash
+git config --global user.name "Ahmed Khalifa"
+git config --global user.email "your@email.com"
+```
+
+### New Project
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ahmedkhalifa-1/REPO_NAME.git
+git push -u origin main
+```
+
+### Daily Use
+```bash
+git add .
+git commit -m "وصف التعديل"
+git push
+```
+
+### Useful Commands
+```bash
+git status          # شوف إيه اللي اتغير
+git log --oneline   # شوف تاريخ الـ commits
+git diff            # شوف التعديلات بالتفصيل
+git pull            # جيب آخر تحديثات من GitHub
+```
