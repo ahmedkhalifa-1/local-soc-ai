@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC AI Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">🛡️</div>
+            <div class="brand-text">
+                <h2>SOC AI Assistant</h2>
+                <span>Cybersecurity AI</span>
+            </div>
+        </div>
+
+        <button class="new-chat-btn" onclick="newChat()">
+            <span class="plus">+</span> New Chat
+        </button>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search chats..." id="searchChats">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <h3 class="section-title">Chats</h3>
+        <div class="chat-list" id="chatList">
+            <!-- chat history items will be injected here -->
+        </div>
+
+        <button class="clear-btn" onclick="clearAllChats()">🗑️ Clear all chats</button>
+
+        <div class="user-box">
+            <div class="avatar">A</div>
+            <div class="user-info">
+                <strong>Admin</strong>
+                <span><i class="dot"></i> Online</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-icon small">🛡️</div>
+                <div class="brand-text">
+                    <h2>SOC AI Assistant</h2>
+                    <span>Your Intelligent SOC Analyst</span>
+                </div>
+            </div>
+
+            <div class="status-badge">
+                <span class="pulse-dot"></span> Offline Mode
+            </div>
+
+            <div class="top-actions">
+                <div class="model-select">
+                    🧬 Model: qwen3:8b <span class="arrow">▾</span>
+                </div>
+                <button class="icon-btn" title="Settings">⚙️</button>
+                <button class="icon-btn" id="themeToggle" title="Toggle theme">🌙</button>
+            </div>
+        </header>
+
+        <section class="chat-window" id="chatWindow">
+            <!-- messages render here -->
+        </section>
+
+        <div class="new-chat-center">
+            <button class="new-chat-pill" onclick="newChat()">✨ New Chat</button>
+        </div>
+
+        <footer class="input-bar">
+            <div class="input-wrapper">
+                <textarea id="userInput" placeholder="Write your question here... / اكتب سؤالك هنا..." rows="1"></textarea>
+                <div class="input-tools">
+                    <span title="Attach">📎</span>
+                    <span title="Code">&lt;/&gt;</span>
+                    <span title="Web">🌐</span>
+                    <span title="Image">🖼️</span>
+                    <span title="Chart">📊</span>
+                </div>
+                <button class="send-btn" onclick="sendMessage()">
+                    ➤ Send
+                </button>
+            </div>
+        </footer>
+
+        <div class="footer-note">SOC AI Assistant v1.0.0 | Built with ❤️ for Cybersecurity</div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
